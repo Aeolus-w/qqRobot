@@ -1,2 +1,11 @@
 ssh CNg -L 6006:localhost:6006 root@connect.cqa1.seetacloud.com -p 19331
 ssh -CNg -L 6006:127.0.0.1:6006 root@connect.cqa1.seetacloud.com -p 19331
+
+
+ssh -CNg -L 6006:127.0.0.1:6006 root@connect.cqa1.seetacloud.com -p 24193
+
+ssh -p 24193 root@connect.cqa1.seetacloud.com
+
+ssh -p 28696 root@connect.cqa1.seetacloud.com
+
+ssh -CNg -L 6006:127.0.0.1:6006 root@connect.cqa1.seetacloud.com -p 28696

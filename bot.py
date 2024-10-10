@@ -8,7 +8,6 @@ from to_api import send_message_to_api
 config = read(os.path.join(os.path.dirname(__file__), "config.yaml"))
 _log = logging.get_logger()
 
-
 class MyTeachingAssistantBot(botpy.Client):
     async def on_ready(self):
         _log.info(f"QQ群教学机器人 「{self.robot.name}」 已启动!")
@@ -22,7 +21,7 @@ class MyTeachingAssistantBot(botpy.Client):
         content1 = response['choices'][0]['message']['content']
         await message._api.post_group_message(
                         group_openid=message.group_openid,
-                        msg_type=0,
+                        msg_type = 0,
                         msg_id=message.id,
                         content=content1
                     )
